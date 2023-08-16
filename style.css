@@ -1,0 +1,132 @@
+body {
+      font-family: 'Sono', sans-serif;
+      color: ;
+      background-color: black;
+    }
+   .pricing-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 2rem;
+    padding: 20px;
+   }
+
+/* ************basic plan*********** */
+
+   .basic-pricing-plan{
+    background-image: linear-gradient(to bottom right, purple, #ff6600);  
+    text-align: center;
+    width: 300px;
+    min-width: 250px;
+    max-width: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    flex: 1;
+   }
+   .basic-plan-title{
+    background: -webkit-linear-gradient(magenta, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-top: 10px;
+   }
+   .basic-plan-button{
+    font-weight: 700;
+    color: #f2f2f2;
+    border-radius: 10px;
+    background-image: linear-gradient(to top right, magenta, #ff6600);
+    cursor: pointer;
+    border: 0px solid magenta;
+    padding: 10px 20px;
+   }
+   .basic-plan-button:hover{
+    background-image: linear-gradient(to top right,#00ff00 ,#0099ff );
+  }
+  
+  /* ***********Standard plan************* */
+
+  .standard-pricing-plan{
+    background-image: linear-gradient(to bottom right, teal, yellow);  
+    text-align: center;
+    width: 300px;
+    min-width: 250px;
+    max-width: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    flex: 1;
+   }
+   .standard-plan-title{
+    background: -webkit-linear-gradient(teal, yellow, cyan );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-top: 10px;
+   }
+   .standard-plan-button{
+    font-weight: 700;
+    color: #f2f2f2;
+    border-radius: 10px;
+    background-image: linear-gradient(to top right, teal, yellow);
+    cursor: pointer;
+    border: 0px solid teal;
+    padding: 10px 20px;
+   }
+   .standard-plan-button:hover{
+    background-image: linear-gradient(to top right, #ff7f7f, blue);
+  }
+
+  /* *************Premium***************** */
+
+  .premium-pricing-plan{
+    background-image: linear-gradient(to bottom right, red, yellow);  
+    text-align: center;
+    width: 300px;
+    min-width: 250px;
+    max-width: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    flex: 1;
+   }
+   .premium-plan-title{
+    background: -webkit-linear-gradient(Yellow, #ff6600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-top: 10px;
+   }
+   .premium-plan-button{
+    font-weight: 700;
+    color: #f2f2f2;
+    border-radius: 10px;
+    background-image: linear-gradient(to top right, red, yellow);
+    cursor: pointer;
+    border: 0px solid #ff6600;
+    padding: 10px 20px;
+   }
+   .premium-plan-button:hover{
+    background-image: linear-gradient(to top right, cyan,blue );
+  }
+
+  .plan-price{
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+   li{
+    font-weight: 600;
+    list-style: none;
+    text-align: justify;
+    margin-bottom: 10px;
+   }
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      .pricing-container{
+        flex-direction: column;
+        height: 100%;
+      }
+    }
